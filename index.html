@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Anniversary Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.clipartmax.com/png/middle/66-664224_4th-place-clipart-4th-place-ribbon-png.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Surpriseeeeee!</h1>
+        
+        <div class="form-group">
+            <label for="dropdown">Choose a topic:</label>
+            <select id="dropdown" class="form-control">
+                <option value="" disabled selected>Select a topic</option>
+                <option value="songs">Song</option>
+                <option value="about">About my love to you</option>
+                <option value="me">Me</option>
+                <option value="you">You</option>
+                <option value="true">Wanna check something?</option>
+            </select>
+        </div>
+        
+        <div class="form-group" id="customContentMain">
+            <label for="inputBox">Message:</label>
+            <textarea id="inputBox" class="form-control" rows="6" placeholder="Your message will appear here" readonly></textarea>
+        </div>
+
+        <!-- Hidden custom content area -->
+        <div class="form-group" id="customContent">
+            <input type="text" id="a" class="form-control" placeholder="Put A Number">
+            <input type="text" id="b" class="form-control" placeholder="Put A Number">
+            <button onclick="compute()">Click Me</button> <!-- Button to trigger the compute function -->
+        </div>
+
+        <!-- Hidden audio element for Songs -->
+        <audio id="audioPlayer" style="display: none;">
+            <source src="song/Love Story (Taylors Version).mp3" type="audio/mpeg"> 
+        </audio>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="pictures/461804805_1219288719192300_6028858729500087313_n.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/461831788_1291183338709768_1474487870470207636_n.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/461856737_508520948609830_1951038682676738444_n.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/461863714_1057953422438579_3953818030797164806_n.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/462076694_1205302180691791_2233669920180273365_n.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
